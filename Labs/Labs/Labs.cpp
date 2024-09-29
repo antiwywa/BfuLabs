@@ -19,8 +19,12 @@ int main()
 		numberToBit /= 2;
 	}
 	reverse(numberInBits.begin(), numberInBits.end());
-	for (auto i = 0; i < numberInBits.size(); i++)
-	{
+	int index, newBit = 0;
+	cout << "Введите индекс для изменения бита числа:\n";
+	cin >> index;
+	cout << "Введите значение нового бита:\n";
+	cin >> newBit;
+	numberInBits[index] = newBit;
+	for (int i = 0;i < numberInBits.size(); i++)
 		cout << numberInBits[i];
-	}
 }
